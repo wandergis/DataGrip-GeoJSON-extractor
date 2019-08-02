@@ -1,5 +1,5 @@
 # DataGrip-GeoJSON-extractor
-A extractor for DataGrip to export geojson in sql query directly.
+A extractor for DataGrip to export geojson file by sql query directly.
 ```sql
 SELECT row_to_json(fc)
 FROM (SELECT 'FeatureCollection' As type, array_to_json(array_agg(f)) As features
